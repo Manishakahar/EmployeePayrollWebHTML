@@ -32,8 +32,8 @@
                     <input class="input" type="text" id="name" name="name" placeholder="Your name... " required />
                     <error-output class="text-error" for="text"></error-output>
                 </div>
-                 <!-- UC 3 – Specify Profile Pic to the Employee Payroll App -->
-                 <div class="row-content">
+                <!-- UC 3 – Specify Profile Pic to the Employee Payroll App -->
+                <div class="row-content">
                     <label for="profile" class="label text">Profile Image</label>
                     <div class="profile-radio-content">
                         <label class="profile-lable">
@@ -63,8 +63,45 @@
                         </label>
                     </div>
                 </div>
+                <!--UC4 Employee Payroll Form with Gender, Department and Salary Range-->
+                <div class="row-content" style="margin-top: 30px;">
+                    <label class="label text" for="gender">Gender</label>
+                    <div>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="Male" style="margin-right: 28px;">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="Female">Female</label>
+                    </div>
+                </div>
+                <div class="row-content" style="margin-top: 30px;">
+                    <label class="label text" for="department">Department</label>
+                    <div>
+                        <input type="checkbox" id="hr" name="hr" value="HR" style="margin-right: 6px;">
+                        <label class="text" for="hr" style="margin-right: 20px;">HR</label>
+
+                        <input type="checkbox" id="sales" name="sales" value="Sales" style="margin-right: 6px;">
+                        <label class="text" for="sales" style="margin-right: 20px;">Sales</label>
+
+                        <input type="checkbox" id="finance" name="finance" value="Finance" style="margin-right: 6px;">
+                        <label class="text" for="finance" style="margin-right: 20px;">Finance</label>
+
+                        <input type="checkbox" id="engineer" name="engineer" value="Engineer"
+                            style="margin-right: 6px;">
+                        <label class="text" for="engineer" style="margin-right: 20px;">Engineer</label>
+
+                        <input type="checkbox" id="others" name="others" value="Others" style="margin-right: 6px;">
+                        <label class="text" for="others" style="margin-right: 20px;">Others</label>
+                    </div>
+                </div>
+                <div class="row-content">
+                    <label class="label text" for="salary">Choose your salary</label>
+                    <input class="input" type="range" name="salary" id="salary" min="300000" max="500000" step="100"
+                        value="400000">
+                    <output class="salary-output text" for="salary">400000</output>
+                    <error-output class="salary-error" for="text"></error-output>
+                </div>
             </form>
         </div>
     </body>
 
- </html>
+    </html>

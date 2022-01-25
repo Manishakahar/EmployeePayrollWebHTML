@@ -99,27 +99,39 @@ label {
 }
 
 .input {
-    width        : 100%;
-    padding      : 12px;
-    border       : 1px solid;
-    border-radius: 5px;
-     /*resize       : vertical;*/
+    width          : 100%;
+    padding        : 12px;
+    border         : 1px solid;
+    border-radius  : 5px;
+    /*resize       : vertical;*/
 }
 
 .profile-radio-content {
     display       : flex;
     flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.profile-radio-content > label {
-    display       : flex;
-    flex-direction: row;
-    align-items   : center;
+    flex-wrap     : wrap;
 }
 
 .prfile {
     width        : 40px;
     border-radius: 50%;
     margin-left  : 8px;
+    margin-right : 30px;
 }
+
+.profile-radio-content>label {
+    display       : flex;
+    flex-direction: row;
+    align-items   : center;
+}
+
+/*Day month year option*/
+select {
+    padding       : 12px;
+    border        : 1px solid #ccc;
+    border-radius : 4px;
+    resize        : vertical;
+    font          : normal normal normal 16px Roboto;
+    letter-spacing: 0px;
+    color         : #42515f;
+    background-color: transparent;

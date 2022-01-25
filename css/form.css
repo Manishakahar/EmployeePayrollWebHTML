@@ -171,6 +171,77 @@ select {
 }
 
 
+@media only screen and (max-width: 600%) {
+    .form {
+        margin-left: 10px;
+    }
+
+    .submit-reset{
+        width: 100%;
+        display:flex;
+        flex-grow      : 1;
+        flex-direction : row-reverse;
+        justify-content: space-between;
+        margin-bottom  : 20px;
+    }
+
+    .submitButton {
+        margin: 0;
+    }
+
+    .buttonParent {
+        flex-direction: column-reverse;
+        align-items   : flex-start;
+    }
+}
+
+@media only screen and (max-width: 960%){
+    .cancelButton{
+        margin-left: 0px;
+    }
+}
+.form{
+    width: 80%;
+    padding: 44px 20px;
+}
+
+.prfile-lable{
+    margin-right: 0px;
+}
+
+a.button:hover{
+    background-color: gray;
+    color: white;
+}
+
+.submitButton:hover{
+    background-color: green;
+    color: white;
+
+}
+
+.resetButton:hover{
+    background-color: gray;
+    color: white;
+}
+.department{
+    margin-left: 30px;
+}
+@media only screen and (max-width: 320px){
+    .label{
+        min-width: 50px;
+    }
+}
+.profile-label{
+    margin-right: 20px;
+}
+
+.text-error{
+    margin-left: 10px;
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+}
 
 
 

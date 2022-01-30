@@ -71,7 +71,6 @@ class EmployeePayrollData {
         }
         this._startDate = startDate;
     }
-
     //method
     toString() {
 

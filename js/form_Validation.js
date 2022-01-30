@@ -104,16 +104,13 @@ const setValue = (id, value) =>{
 }
 /** save employee object into local storage */
 function createAndUpdateStorage(employeePayrollData){
-    let employeePayrollList = JSON.parse(localStorage.getItem("EmployeePayrollList"));
-
-    if(employeePayrollList != undefined)
-    {
+    let employeePayrollList=JSON.parse(localStorage.getItem("EmployeePayrollList"));
+    if (employeePayrollList!=undefined){
         employeePayrollList.push(employeePayrollData);
     }
-    else
-    {
-        employeePayrollList = [employeePayrollData];
+    else{
+        employeePayrollList=[EmployeePayrollData]
     }
-    //alert(employeePayrollList.toString());
-    localStorage.setItem("EmployeePayrollList",JSON.stringify(employeePayrollList));
+    alert(employeePayrollList.toString());
+    localStorage.setItem("EmployeePayrollList",JSON.stringify(employeePayrollList))
 }
